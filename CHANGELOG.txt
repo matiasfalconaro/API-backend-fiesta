@@ -1,0 +1,36 @@
+# CHANGELOG
+
+## VERSION 1.3.1 [QAS 2024-10-25]
+- Change: Tipo de dato codigo_premio [int -> str]
+
+## VERSION 1.3.0 [QAS 2024-10-21]
+- Add: Autenticación vía API key
+- Add: Limitacion de tasa en endpoints
+
+## VERSION 1.2.1 [QAS 2024-10-10] (Main)
+- Fix: asiste no tomaba valor False
+
+## VERSION 1.2.0 [QAS 2024-10-09]
+- Add: Endpoint para dropear la BBDD
+- Add: Validacion tipos de datos en premios
+- Change: Label JSON 'consulta_premios/'
+- Change: Documentacion en '/'
+- Fix: BBDD validación telefonos-premios
+
+## VERSION 1.1.0 [QAS 2024-10-07]
+- Add: Route 'consulta_invitados/{telefono}' GET
+- Add: Route 'consulta_premios/{telefono_invitado}' GET
+- Add: openpyxl en requirements
+- Add: DNS a URL de endpoints en README
+- Fix: Tempfile .xlsx route 'carga_masiva/' POST
+- Fix: Validaciones en endpoints
+
+## VERSION 1.0.0 [QAS 2024-10-04] (Main)
+- Add: Backend FastAPI expuesto
+- Add: Route 'carga_masiva/' POST
+- Add: Route 'consulta_invitados/' GET
+- Add: Route 'consulta_premios/' GET
+- Add: Route 'invitados/' PUT
+- Add: Route 'premios/' PUT
+- Add: BBDD SQLite3
+- Add: ORM SQLAlchemy

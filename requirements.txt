@@ -1,0 +1,9 @@
+fastapi
+slowapi
+pydantic_settings
+uvicorn
+python-multipart
+SQLAlchemy
+pandas
+openpyxl
+python-dotenv

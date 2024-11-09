@@ -1,0 +1,64 @@
+# I1677 - API para VITA Fiesta
+
+Se desarrollara un API utilizando FastAPI para gestionar el almacenamiento y acceso a la información de los invitados y premios de la fiesta de la empresa.
+
+```
+# Python
+Python==3.11.9
+
+# Dependencias (local)
+pip install --trusted-host pypi.org --trusted-host pypi.python.org --trusted-host files.pythonhosted.org -r requirements.txt
+
+# Web server
+Uvicorn
+
+# IP Servers
+PRD: 172.17.60.131
+QAS: 172.17.60.31
+
+# Ejecución
+uvicorn main:app --reload
+
+# Dependencias
+requirements.txt
+
+# Base de datos local y auto-contenida
+sqlite:///./database/vitaFiesta.db
+(Habrá dos BBDD una en QAS y otra en PRD)
+
+# API Docs
+api/api.py
+
+# DNS
+QAS: https://eventosfda-test.scienza.com.ar
+PRD: https://eventosfda.scienza.com.ar
+
+# AUTENTICACION: API KEY
+- Variables de entorno
+    - API key
+    - API key name
+- Endpoints parametrizados
+    - url/endpoint/<API_KEY_NAME>=<API_KEY>
+
+# ENDPOINTS
+QAS:
+https://eventosfda-test.scienza.com.ar/consulta_premios/{telefono_invitado} [RL:25/min]
+https://eventosfda-test.scienza.com.ar/consulta_invitados/{telefono} [RL:25/min]
+https://eventosfda-test.scienza.com.ar/consulta_invitados [RL:25/min]
+https://eventosfda-test.scienza.com.ar/consulta_premios [RL:25/min]
+https://eventosfda-test.scienza.com.ar/invitados [RL:25/min]
+https://eventosfda-test.scienza.com.ar/premios [RL:25/min]
+https://eventosfda-test.scienza.com.ar/carga_masiva [RL:1/min]
+https://eventosfda-test.scienza.com.ar/reset_db [RL:1/min]
+
+PRD:
+https://eventosfda.scienza.com.ar/consulta_premios/{telefono_invitado} [RL:25/min]
+https://eventosfda.scienza.com.ar/consulta_invitados/{telefono} [RL:25/min]
+https://eventosfda.scienza.com.ar/consulta_invitados [RL:25/min]
+https://eventosfda.scienza.com.ar/consulta_premios [RL:25/min]
+https://eventosfda.scienza.com.ar/invitados [RL:25/min]
+https://eventosfda.scienza.com.ar/premios [RL:25/min]
+https://eventosfda.scienza.com.ar/carga_masiva [RL:1/min]
+https://eventosfda.scienza.com.ar/reset_db [RL:1/min]
+
+```
