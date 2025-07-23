@@ -42,14 +42,14 @@ PRD: https://url-prd.asd.com.ar
 
 # ENDPOINTS
 QAS:
-https://url-prd.asd.com.arconsulta_premios/{telefono_invitado} [RL:25/min]
-https://url-prd.asd.com.ar/consulta_invitados/{telefono} [RL:25/min]
-https://url-prd.asd.com.ar/consulta_invitados [RL:25/min]
-https://url-prd.asd.com.ar/consulta_premios [RL:25/min]
-https://url-prd.asd.com.ar/invitados [RL:25/min]
-https://url-prd.asd.com.ar/premios [RL:25/min]
-https://url-prd.asd.com.ar/carga_masiva [RL:1/min]
-https://url-prd.asd.com.ar/reset_db [RL:1/min]
+https://url-qas.asd.com.arconsulta_premios/{telefono_invitado} [RL:25/min]
+https://url-qas.asd.com.ar/consulta_invitados/{telefono} [RL:25/min]
+https://url-qas.asd.com.ar/consulta_invitados [RL:25/min]
+https://url-qas.asd.com.ar/consulta_premios [RL:25/min]
+https://url-qas.asd.com.ar/invitados [RL:25/min]
+https://url-qas.asd.com.ar/premios [RL:25/min]
+https://url-qas.asd.com.ar/carga_masiva [RL:1/min]
+https://url-qas.asd.com.ar/reset_db [RL:1/min]
 
 PRD:
 https://url-prd.asd.com.ar/consulta_premios/{telefono_invitado} [RL:25/min]
